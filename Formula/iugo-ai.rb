@@ -5,21 +5,21 @@
 class IugoAi < Formula
   desc "Gentle-AI — Ecosystem, Frameworks, Workflows for AI coding agents."
   homepage "https://github.com/iugo-programming/iugo-ai"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/iugo-programming/iugo-ai/releases/download/v1.0.0/iugo-ai_1.0.0_darwin_amd64.tar.gz"
-      sha256 "18e3aee283a18f759eedd6cdc4be280cabadd0ec2e75914d559b6b10ff7ffb93"
+      url "https://github.com/iugo-programming/iugo-ai/releases/download/v1.0.1/iugo-ai_1.0.1_darwin_amd64.tar.gz"
+      sha256 "7b26800d6f76c35ca1617b9b2c6ad4b8ef55a5400710c70b919a155518b69f4d"
 
       define_method(:install) do
         bin.install "iugo-ai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/iugo-programming/iugo-ai/releases/download/v1.0.0/iugo-ai_1.0.0_darwin_arm64.tar.gz"
-      sha256 "e5287df96d154ce8c843dcba1fafde0d0a450f3842647fab0f622801d1b4c61e"
+      url "https://github.com/iugo-programming/iugo-ai/releases/download/v1.0.1/iugo-ai_1.0.1_darwin_arm64.tar.gz"
+      sha256 "70013eafa4fbb2796c4db5dd672a8c2a222dc3b06a823b71f5fa38ee21fd63f0"
 
       define_method(:install) do
         bin.install "iugo-ai"
@@ -29,15 +29,15 @@ class IugoAi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/iugo-programming/iugo-ai/releases/download/v1.0.0/iugo-ai_1.0.0_linux_amd64.tar.gz"
-      sha256 "7aef7d1a26757c7ac6dbb86b0b3f8c0fd16db7308494bc1d6775ea4ed6176fad"
+      url "https://github.com/iugo-programming/iugo-ai/releases/download/v1.0.1/iugo-ai_1.0.1_linux_amd64.tar.gz"
+      sha256 "83478ce1ccd2a06eeeae6b2a17bde28829f112a4993ff2aba0051d059d7351cf"
       define_method(:install) do
         bin.install "iugo-ai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/iugo-programming/iugo-ai/releases/download/v1.0.0/iugo-ai_1.0.0_linux_arm64.tar.gz"
-      sha256 "791c2e6edaf7ed411c19f16836c9ae51af173e7807830f2c8492f0a1befc3a87"
+      url "https://github.com/iugo-programming/iugo-ai/releases/download/v1.0.1/iugo-ai_1.0.1_linux_arm64.tar.gz"
+      sha256 "5c230410015cf53f82eec49b7b2e29353c0738ddbc42cc52180eae23e0dcd3af"
       define_method(:install) do
         bin.install "iugo-ai"
       end
